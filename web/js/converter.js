@@ -1,0 +1,1 @@
+// Skrypt z funkcjami konwertującymi

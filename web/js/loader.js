@@ -1,0 +1,1 @@
+// Skrypt generujący loading bar

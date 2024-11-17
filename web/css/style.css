@@ -1,0 +1,77 @@
+html {
+    background-color: #333333;
+    color: #EEEEEE;
+    font-family: 'Garamond';
+}
+
+@media only screen and (min-width: 1201px) {
+    html {
+        font-size: 16px;
+    }    
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
+
+    .title {
+        font-size: 64px;
+        line-height: normal
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        margin-left: 7%;
+        margin-right: 7%;        
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: normal
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 12px;
+    }    
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;        
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: normal
+    }
+}
+
+main {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover {
+    color: orange;
+    transition-duration: 0.1s;
+}
+
+.text-right {
+    text-align: right;
+    margin-right: 5%;
+}
+
+.signature {
+    font-family: "Brush Script MT", cursive;
+    font-size: 24px;
+}

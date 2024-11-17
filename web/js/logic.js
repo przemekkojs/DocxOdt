@@ -1,0 +1,1 @@
+// Skrypt z podpinaniem logiki do elementów html

@@ -30,40 +30,33 @@
                 </p>
             </section>
 
-            <section id="main">
+            <section id="main" class="main parent">
                 <!-- Tu jest sekcja wgrywania pliku -->
-                <div>
-                    <form id="file-form">
-                        <div>
-                            <!-- Tu obrazek wgrywania pliku -->
-                        </div>
-        
-                        <div>
-                            <!-- Tu tekst -->
-                        </div>
-                    </form>                    
+                <div class="block child">
+                    <label for="file-upload" class="label">
+                        <img src="img/docxIcon.png" alt="Wgraj plik" class="image" title="Wgraj plik">
+                    </label>
+                    <input type="file" id="file-upload" class="input">
+                    <div id="upload-info" class="file-info">
+                        <!-- JS się tym zajmuje -->
+                    </div>
                 </div>
                 
                 <!-- Tu jest sekcja animacji ładowania konwersji -->
-                <div id="loader">
+                <div id="loader" class="child align-items-center">
                     
-                </div>
+                </div>        
 
-                <!-- Tu jest sekcja odbierania pliku -->
-                <div>
-                    
-                </div>
+                <!-- JS dodaje i usuwa pobieranie pliku -->
             </section>
 
             <section id="footer">
                 <!-- JS się tym zajmuje -->
             </section>            
         </main>
-
-        <script src="js/footer.js"></script>
-        <script src="js/header.js"></script>
-        <script src="js/loader.js"></script>
-        <script src="js/converter.js"></script>
-        <script src="js/logic.js"></script>
     </body>
+
+    <script defer src="js/footer.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/logic.js" type="module"></script>
 </html>

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1201px) {
+    html {
+        font-size: 16px;
+    }    
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
+
+    .title {
+        font-size: 64px;
+        line-height: normal
+    }
+}

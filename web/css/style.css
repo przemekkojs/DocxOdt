@@ -4,54 +4,6 @@ html {
     font-family: 'Garamond';
 }
 
-@media only screen and (min-width: 1201px) {
-    html {
-        font-size: 16px;
-    }    
-
-    main {
-        margin-left: 10%;
-        margin-right: 10%;        
-    }
-
-    .title {
-        font-size: 64px;
-        line-height: normal
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-    html {
-        font-size: 14px;
-    }
-
-    main {
-        margin-left: 7%;
-        margin-right: 7%;        
-    }
-
-    .title {
-        font-size: 48px;
-        line-height: normal
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    html {
-        font-size: 12px;
-    }    
-
-    main {
-        margin-left: 5%;
-        margin-right: 5%;        
-    }
-
-    .title {
-        font-size: 32px;
-        line-height: normal
-    }
-}
-
 main {
     text-align: center;
 }
@@ -74,4 +26,60 @@ a:hover {
 .signature {
     font-family: "Brush Script MT", cursive;
     font-size: 24px;
+}
+
+.label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #2B579A;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 8px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #444444;
+    transition-duration: 0.5s;
+}
+
+.input {
+    display: none; /* Hide the default input */
+}
+
+.block {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.file-info {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.err {
+    color: red;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.child {
+    padding: 10px;    
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
 }

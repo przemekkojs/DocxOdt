@@ -16,3 +16,5 @@ Będą się zapewne nieznacznie różnić, ale zadanie mają identyczne, więc k
 
 <h2>Dodatkowe informacje</h2>
 <h3>Wersja desktop</h3>
+
+Pandoc 3.6: https://github.com/jgm/pandoc/releases/tag/3.6

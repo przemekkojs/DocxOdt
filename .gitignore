@@ -1,0 +1,11 @@
+desktop/Converter/Converter/bin
+desktop/Converter/Converter/obj
+desktop/Converter/Converter/.vs
+
+desktop/Converter/ConverterTests/bin
+desktop/Converter/ConverterTests/obj
+desktop/Converter/ConverterTests/.vs
+
+*.docx
+*.odt
+*.doc

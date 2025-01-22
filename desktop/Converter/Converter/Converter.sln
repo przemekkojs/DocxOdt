@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converter", "Converter.csproj", "{D7C20ABF-2B78-44F1-B0B5-085E87A8D328}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterTests", "..\ConverterTests\ConverterTests.csproj", "{CFE83725-33DE-4E19-9968-986C94B84E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterWinWorms", "..\ConverterWinWorms\ConverterWinWorms.csproj", "{767B67CB-F1F9-4CE4-9B01-54CC86122805}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CFE83725-33DE-4E19-9968-986C94B84E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFE83725-33DE-4E19-9968-986C94B84E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFE83725-33DE-4E19-9968-986C94B84E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767B67CB-F1F9-4CE4-9B01-54CC86122805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767B67CB-F1F9-4CE4-9B01-54CC86122805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767B67CB-F1F9-4CE4-9B01-54CC86122805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767B67CB-F1F9-4CE4-9B01-54CC86122805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

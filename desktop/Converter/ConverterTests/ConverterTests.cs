@@ -2,7 +2,7 @@
 {
     public class ConverterTests
     {
-        private void RemoveDirectoryContents(string directoryPath)
+        private static void RemoveDirectoryContents(string directoryPath)
         {
             try
             {
@@ -29,7 +29,7 @@
             }
         }
 
-        private void ClearOutputDirectories()
+        private static void ClearOutputDirectories()
         {
             var pre = Directory.GetCurrentDirectory();
             var out1 = "/outputEmpty";
@@ -54,13 +54,18 @@
             convert.ChangeInputDirectory(testFilesDir);
             convert.ChangeOutputDirectory(outputDir);
 
-            convert.DocxToOdt();
+            convert.DocxToOdtMultiple();
 
             var outputCount = Directory
                 .GetFiles(outputDir)
                 .Length;
 
-            Assert.True(outputCount == 0);
+            var testCount = Directory
+                .GetFiles(testFilesDir)
+                .Length;
+
+            Assert.True(outputCount == testCount);
+            Assert.True(outputCount == testCount);
         }
 
         [Fact]
@@ -75,13 +80,17 @@
             convert.ChangeInputDirectory(testFilesDir);
             convert.ChangeOutputDirectory(outputDir);
 
-            convert.DocxToOdt();
+            convert.DocxToOdtMultiple();
 
             var outputCount = Directory
                 .GetFiles(outputDir)
                 .Length;
 
-            Assert.True(outputCount != 0);
+            var testCount = Directory
+                .GetFiles(testFilesDir)
+                .Length;
+
+            Assert.True(outputCount == testCount);
         }
 
         [Fact]
@@ -96,13 +105,17 @@
             convert.ChangeInputDirectory(testFilesDir);
             convert.ChangeOutputDirectory(outputDir);
 
-            convert.DocToOdt();
+            convert.DocToOdtMultiple();
 
             var outputCount = Directory
                 .GetFiles(outputDir)
                 .Length;
 
-            Assert.True(outputCount != 0);
+            var testCount = Directory
+                .GetFiles(testFilesDir)
+                .Length;
+
+            Assert.True(outputCount == testCount);
         }
     }
 }

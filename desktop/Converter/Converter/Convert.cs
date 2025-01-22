@@ -4,11 +4,13 @@ namespace Converter
 {
     public class Convert
     {
+        public IO IO { get => _io; }
+
         private readonly IO _io;
 
-        private const string DOCX = "docx";
-        private const string DOC = "doc";
-        private const string ODT = "odt";
+        public const string DOCX = "docx";
+        public const string DOC = "doc";
+        public const string ODT = "odt";
 
         public Convert()
         {
@@ -19,18 +21,22 @@ namespace Converter
             };
         }
 
-        private List<string> GetFilesByExtension(string extenstion)
+        public static List<string> GetFilesByExtension(string dir, string extenstion)
         {
             var files = Directory
-                .GetFiles(_io.InputDirectory, $"*.{extenstion}");
+                .GetFiles(dir, $"*.{extenstion}");
 
             var result = files.ToList();
 
             return result;
         }
 
-        private void ConvertTemplate(string from, string to)
+        private List<string> GetFilesByExtension(string extenstion) => GetFilesByExtension(_io.InputDirectory, extenstion);
+
+        private void MultipleConvertTemplate(string from, string to)
         {
+            _io.SetDefault();
+
             var files = GetFilesByExtension(from);
 
             foreach (var file in files)
@@ -55,10 +61,10 @@ namespace Converter
             }
         }
 
-        public void DocxToOdt() => ConvertTemplate(DOCX, ODT);
-        public void DocToOdt() => ConvertTemplate(DOC, ODT);
-        public void OdtToDocx() => ConvertTemplate(ODT, DOCX);
-        public void OdtToDoc() => ConvertTemplate(ODT, DOC);
+        public void DocxToOdtMultiple() => MultipleConvertTemplate(DOCX, ODT);
+        public void DocToOdtMultiple() => MultipleConvertTemplate(DOC, ODT);
+        public void OdtToDocxMultiple() => MultipleConvertTemplate(ODT, DOCX);
+        public void OdtToDocMultiple() => MultipleConvertTemplate(ODT, DOC);
 
         public void ChangeInputDirectory(string inputDirectory) =>
             _io.InputDirectory = inputDirectory;

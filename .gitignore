@@ -6,6 +6,13 @@ desktop/Converter/ConverterTests/bin
 desktop/Converter/ConverterTests/obj
 desktop/Converter/ConverterTests/.vs
 
+desktop/Converter/ConverterWinWorms/bin
+desktop/Converter/ConverterWinWorms/obj
+desktop/Converter/ConverterWinWorms/Properties
+desktop/Converter/ConverterWinWorms/.vs
+
+desktop/ConverterFree
+
 *.docx
 *.odt
 *.doc
